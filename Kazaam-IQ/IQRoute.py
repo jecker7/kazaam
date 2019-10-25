@@ -1,5 +1,6 @@
 import subprocess
 import socket
+import logging
 
 class IQInterface():
 	
@@ -9,7 +10,9 @@ class IQInterface():
 		self.user = user
 		self.password = password
 		self.connect(client, user, product, password)
-		
+
+
+	def prepare(self):
 
 	def connect(self, host, port, client, user, product, password):
 		args = client + "-product " + product + " -version " + version \
