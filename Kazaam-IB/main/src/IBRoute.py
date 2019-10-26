@@ -28,9 +28,13 @@ class IBRoute(EWrapper, EClient):
         order.lmtPrice = lmt_price
         order.transmit = transmit
 
+        client.req_ids(1)
 
-
-
+        if client.order_id:
+            client.placeOrder(client.order_id, contract, order)
+        else:
+            log.info("Order ID not received.")
+        client.reqPositions()
 
     @iswrapper
     def order_status(selfself, order_id, status, filled, remaining, avg_fill_price, perm_id, parent_id,
