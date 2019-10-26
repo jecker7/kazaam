@@ -18,4 +18,6 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+    path('dashboard/', include ('dashboard.urls'), name = "dashboard"),
+    path('monitor/', include ('monitor.urls'), name = "monitor")
+] + static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
