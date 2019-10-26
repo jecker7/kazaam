@@ -12,4 +12,8 @@ def login_view(request):
         else:
             form = SignUpForm()
         return render(request, 'accounts/login.html', {'form': form})
-# Create your views here.
+
+def logout_view(request):
+    if request.method == 'POST':
+        logout(request)
+        return redirect('landing_page')
