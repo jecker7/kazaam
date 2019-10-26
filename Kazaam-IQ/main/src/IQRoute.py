@@ -2,7 +2,7 @@ import subprocess
 import socket
 import logging
 
-class IQInterface():
+class IQInterface:
 	
 	def __init__(self, client, product, user, password):
 		self.client = client
@@ -33,8 +33,8 @@ class IQInterface():
 					conn.sendall(data)
 
 
-	def get_hticks(self, symbol, max_days, max_pts, begin, end, direction, req_id, pts_per_send):
-		request = "HTX,{},{},{},{},{},{},{},{}".format(symbol, max_days, max_pts, begin, end, direction, req_iq, pts_per_send)
+	def get_hticks(self, symbol, max_pts, direction, req_id, pts_per_send):
+		request = "HTX,{},{},{},{},{}".format(symbol, max_pts, direction, req_iq, pts_per_send)
 		return request
 
 	def get_hdays(self, symbol, max_days, max_pts, begin, end, direction, req_id, pts_per_send):
