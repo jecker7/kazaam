@@ -1,4 +1,3 @@
-
 class IQTick:
     def __init__(self):
         self.open

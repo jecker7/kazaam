@@ -37,7 +37,7 @@ class IBRoute(EWrapper, EClient):
         client.reqPositions()
 
     @iswrapper
-    def order_status(selfself, order_id, status, filled, remaining, avg_fill_price, perm_id, parent_id,
+    def order_status(self, order_id, status, filled, remaining, avg_fill_price, perm_id, parent_id,
                     last_fill_price, client_id):
         ''' Check the status of submitted order'''
         print('Number of filled positions: {}'.format(filled))
