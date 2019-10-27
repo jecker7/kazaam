@@ -1,11 +1,13 @@
 import socket
 import threading
-
+import logging
+logging.basicConfig(level=logging.INFO)
 class IQSocket(socket.socket, threading.Thread):
     def __init__(self, *args, **kwargs):
         super(IQSocket, self).__init__(*args, **kwargs)
 
     def run(self):
+        logging.info("IQSocket Started")
         pass
 
     def connect(self, host, port):
@@ -14,21 +16,20 @@ class IQSocket(socket.socket, threading.Thread):
             self.listen()
             conn, addr = self.accept()
             with conn:
-                print("Connected by ", addr)
+                logging.info("Connected by ", addr)
             while True:
                 data = conn.recv(1024)
-                print(data)
+                logging.info(data)
                 if not data:
                     break
         except:
-            print("Error binding to IQ Service")
-
+            logging.debug("Error binding to IQ Service")
 
     def disconnect(self):
         try:
             self.disconnect()
         except:
-            print("Error disconnecting.")
+            logging.debug("Error disconnecting.")
 
     def read(self):
         while self.
@@ -36,4 +37,4 @@ class IQSocket(socket.socket, threading.Thread):
 if __name__ == "__main__":
     t = IQSocket()
     t.start()
-    print("alive: " + t.is_alive())
+    logging.info("alive: " + t.is_alive())
