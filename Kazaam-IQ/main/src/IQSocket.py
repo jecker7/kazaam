@@ -3,8 +3,13 @@ import threading
 import logging
 logging.basicConfig(level=logging.INFO)
 class IQSocket(socket.socket, threading.Thread):
-    def __init__(self, *args, **kwargs):
-        super(IQSocket, self).__init__(*args, **kwargs)
+    def __init__(self, group=None, target=None, name=None,
+                 args=(), kwargs=None, verbose=None):
+        super(IQSocket, self).__init__(group=group, target=target,
+                                       name=name, verbose=verbose)
+        self.args = args
+        self.kwargs = kwargs
+        return
 
     def run(self):
         logging.info("IQSocket Started")
