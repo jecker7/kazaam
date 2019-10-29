@@ -1,3 +1,6 @@
+import com.opencsv.CSVWriter;
+
+import java.io.FileWriter;
 
 public class IQHistory{
 
@@ -19,9 +22,22 @@ public class IQHistory{
         }
     }
 
+    public void run(){
+        try {
+            this.prepare();
+            HistoryListener listener = new HistoryListener();
+            this.requestData(this.HTD("@ES#", "1000"));
+            listener.run("/csv");
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
     public void requestData(String request){
         try {
-
+            this.historySocket.writer.write(request);
+        } catch (Exception e){
+            e.printStackTrace();
         }
     }
 
@@ -65,12 +81,16 @@ public class IQHistory{
     }
 
     class HistoryListener extends Thread {
-        public void run(){
+        public void run(String outputPath){
             String line;
             try{
+                CSVWriter writer = new CSVWriter(new FileWriter(outputPath));
                 while((line = historySocket.reader.readLine()) != null){
-
+                    line = historySocket.reader.readLine();
+                    System.out.println(line);
+                    writer.writeNext(historySocket.reader.readLine().split(","));
                 }
+                writer.close();
             } catch (Exception e){
                 e.printStackTrace();
             }
