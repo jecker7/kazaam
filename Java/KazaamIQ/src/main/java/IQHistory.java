@@ -13,7 +13,9 @@ public class IQHistory{
         System.out.println("Connection status : " + this.historySocket.isConnected());
         this.historySocket.CreateBuffers();
         try {
-            this.historySocket.writer.write();
+            this.historySocket.writer.write(setProtocol("1.0"));
+        } catch (Exception e){
+            e.printStackTrace();
         }
     }
 
@@ -23,12 +25,12 @@ public class IQHistory{
         }
     }
 
-    public void setProtocol(String version){
-
+    public String setProtocol(String version){
+        return String.format("S,SET PROTOCOL, %s\r\n", version);
     }
 
-    public void setClientName(String name){
-
+    public String setClientName(String name){
+        return String.format("S,SET CLIENT NAME, %s\r\n", name);
     }
 
     public String HTX(String symbol, String maxPts){
@@ -60,6 +62,19 @@ public class IQHistory{
     }
     public String HMX(String symbol, String maxMonths){
         return String.format("HID,%s,%s\r\n", symbol, maxMonths);
+    }
+
+    class HistoryListener extends Thread {
+        public void run(){
+            String line;
+            try{
+                while((line = historySocket.reader.readLine()) != null){
+
+                }
+            } catch (Exception e){
+                e.printStackTrace();
+            }
+        }
     }
 }
 
