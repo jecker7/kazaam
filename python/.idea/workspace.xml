@@ -1,9 +1,201 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="74" />
-    <option name="y" value="8" />
-    <option name="width" value="1710" />
-    <option name="height" value="1043" />
+  <component name="ChangeListManager">
+    <list default="true" id="8655d18c-edc7-4dea-bc39-b5f212edb199" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/kazaam.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/kazaam.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-Base/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamBase/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-Base/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamBase/main/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-Base/main/src/BaseProcessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamBase/main/src/BaseProcessor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-Base/main/src/BaseRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamBase/main/src/BaseRoute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-Base/main/src/IQMessage.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamBase/main/src/IQMessage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-Base/main/src/IQTick.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamBase/main/src/IQTick.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-Base/main/src/IQTime.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamBase/main/src/IQTime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-Base/main/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamBase/main/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-Client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamClient/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-Genie/main/src/Genie.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamGenie/main/src/Genie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-IB/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIB/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-IB/interfaces.json" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIB/interfaces.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-IB/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIB/main/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-IB/main/src/IBRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIB/main/src/IBRoute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-IB/main/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIB/main/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-IQ/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-IQ/interfaces.json" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/interfaces.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-IQ/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/main/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-IQ/main/src/HistorySocket.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/main/src/HistorySocket.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-IQ/main/src/IQProcessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/main/src/IQProcessor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-IQ/main/src/IQRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/main/src/IQRoute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-IQ/main/src/IQSocket.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/main/src/IQSocket.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-IQ/main/src/Level1Socket.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/main/src/Level1Socket.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-IQ/main/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/main/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-IQ/main/test/resources/test_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/main/test/resources/test_data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-Zipline/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamZipline/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kazaam-Zipline/main/ZiplineProcessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamZipline/main/ZiplineProcessor.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/KazaamZipline/main/ZiplineProcessor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Kazaam-Zipline/main/ZiplineProcessor.py" />
+        <option value="$PROJECT_DIR$/KazaamZipline/main/ZiplineProcessor.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="KazaamBase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="KazaamBase" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="KazaamBase" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="KazaamIQ" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="KazaamWeb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="KazaamZipline" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="KazaamZipline" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CareBot" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8655d18c-edc7-4dea-bc39-b5f212edb199" name="Default Changelist" comment="" />
+      <created>1572457039889</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572457039889</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2228145" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="4" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/KazaamZipline/main/ZiplineProcessor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

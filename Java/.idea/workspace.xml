@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2eda611c-761e-44c4-9bc0-c3dd829295de" name="Default Changelist" comment="" />
+    <list default="true" id="2eda611c-761e-44c4-9bc0-c3dd829295de" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../python/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Base/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamBase/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Base/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamBase/main/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Base/main/src/BaseProcessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamBase/main/src/BaseProcessor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Base/main/src/BaseRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamBase/main/src/BaseRoute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Base/main/src/IQMessage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamBase/main/src/IQMessage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Base/main/src/IQTick.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamBase/main/src/IQTick.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Base/main/src/IQTime.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamBase/main/src/IQTime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Base/main/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamBase/main/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamClient/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Genie/main/src/Genie.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamGenie/main/src/Genie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IB/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIB/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IB/interfaces.json" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIB/interfaces.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IB/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIB/main/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IB/main/src/IBRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIB/main/src/IBRoute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IB/main/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIB/main/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IQ/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIQ/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IQ/interfaces.json" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIQ/interfaces.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IQ/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIQ/main/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IQ/main/src/HistorySocket.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIQ/main/src/HistorySocket.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IQ/main/src/IQProcessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIQ/main/src/IQProcessor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IQ/main/src/IQRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIQ/main/src/IQRoute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IQ/main/src/IQSocket.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIQ/main/src/IQSocket.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IQ/main/src/Level1Socket.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIQ/main/src/Level1Socket.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IQ/main/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIQ/main/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IQ/main/test/resources/test_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIQ/main/test/resources/test_data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Zipline/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamZipline/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Zipline/main/ZiplineProcessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamZipline/main/ZiplineProcessor.py" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/KazaamBase/target/" />
     <ignored path="$PROJECT_DIR$/KazaamIQ/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,7 +45,7 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KazaamBase/pom.xml">
           <provider selected="true" editor-type-id="text-editor" />
@@ -24,12 +54,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KazaamIQ/src/main/java/IQSocket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="306">
               <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#157#158#0" expanded="true" />
-                <element signature="e#177#178#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -38,26 +66,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/KazaamIQ/src/main/java/IQHistory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+            <state relative-caret-position="425">
+              <caret line="37" column="52" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#125#126#0" expanded="true" />
-                <element signature="e#159#160#0" expanded="true" />
-                <element signature="e#1125#1126#0" expanded="true" />
-                <element signature="e#1196#1197#0" expanded="true" />
-                <element signature="e#1243#1244#0" expanded="true" />
-                <element signature="e#1314#1315#0" expanded="true" />
-                <element signature="e#1368#1369#0" expanded="true" />
-                <element signature="e#1437#1438#0" expanded="true" />
-                <element signature="e#1491#1492#0" expanded="true" />
-                <element signature="e#1561#1562#0" expanded="true" />
-                <element signature="e#2232#2233#0" expanded="true" />
-                <element signature="e#2302#2303#0" expanded="true" />
-                <element signature="e#2497#2498#0" expanded="true" />
-                <element signature="e#2568#2569#0" expanded="true" />
-                <element signature="e#2624#2625#0" expanded="true" />
-                <element signature="e#2696#2697#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,7 +137,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -138,7 +150,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,9 +217,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8.0_211" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -250,18 +263,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24946696" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25746268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Learn" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -269,12 +279,15 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -283,12 +296,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/KazaamIQ/src/main/java/IQSocket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="306">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#157#158#0" expanded="true" />
-            <element signature="e#177#178#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -302,26 +313,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/KazaamIQ/src/main/java/IQHistory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+        <state relative-caret-position="425">
+          <caret line="37" column="52" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#125#126#0" expanded="true" />
-            <element signature="e#159#160#0" expanded="true" />
-            <element signature="e#1125#1126#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1243#1244#0" expanded="true" />
-            <element signature="e#1314#1315#0" expanded="true" />
-            <element signature="e#1368#1369#0" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1491#1492#0" expanded="true" />
-            <element signature="e#1561#1562#0" expanded="true" />
-            <element signature="e#2232#2233#0" expanded="true" />
-            <element signature="e#2302#2303#0" expanded="true" />
-            <element signature="e#2497#2498#0" expanded="true" />
-            <element signature="e#2568#2569#0" expanded="true" />
-            <element signature="e#2624#2625#0" expanded="true" />
-            <element signature="e#2696#2697#0" expanded="true" />
           </folding>
         </state>
       </provider>
