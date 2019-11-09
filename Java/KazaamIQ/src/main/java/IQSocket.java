@@ -2,6 +2,7 @@ import java.io.*;
 import java.net.*;
 
 public class IQSocket extends Socket {
+    // class variables
     BufferedReader reader;
     BufferedWriter writer;
 
@@ -9,7 +10,8 @@ public class IQSocket extends Socket {
         super();
     }
 
-    protected boolean ConnectSocket(int iPort){
+    // takes a port and establishes a connection
+    protected boolean Connect(int iPort){
         try{
             this.connect(new InetSocketAddress("localhost", iPort));
         } catch (Exception e){

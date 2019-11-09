@@ -2,89 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eda611c-761e-44c4-9bc0-c3dd829295de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KazaamIQ/src/main/java/requests/HistoricalRequests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KazaamIQ/src/main/test/TestIQHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../python/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Base/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamBase/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Base/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamBase/main/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Base/main/src/BaseProcessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamBase/main/src/BaseProcessor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Base/main/src/BaseRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamBase/main/src/BaseRoute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Base/main/src/IQMessage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamBase/main/src/IQMessage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Base/main/src/IQTick.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamBase/main/src/IQTick.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Base/main/src/IQTime.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamBase/main/src/IQTime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Base/main/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamBase/main/src/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamClient/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Genie/main/src/Genie.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamGenie/main/src/Genie.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IB/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIB/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IB/interfaces.json" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIB/interfaces.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IB/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIB/main/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IB/main/src/IBRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIB/main/src/IBRoute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IB/main/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIB/main/src/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IQ/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIQ/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IQ/interfaces.json" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIQ/interfaces.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IQ/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIQ/main/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IQ/main/src/HistorySocket.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIQ/main/src/HistorySocket.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IQ/main/src/IQProcessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIQ/main/src/IQProcessor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IQ/main/src/IQRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIQ/main/src/IQRoute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IQ/main/src/IQSocket.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIQ/main/src/IQSocket.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IQ/main/src/Level1Socket.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIQ/main/src/Level1Socket.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IQ/main/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIQ/main/src/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-IQ/main/test/resources/test_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamIQ/main/test/resources/test_data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Zipline/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamZipline/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/Kazaam-Zipline/main/ZiplineProcessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/KazaamZipline/main/ZiplineProcessor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KazaamBase/KazaamBase.iml" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamBase/KazaamBase.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KazaamIQ/KazaamIQ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/KazaamIQ.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/IQHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/java/IQHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/IQSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/java/IQSocket.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/KazaamBase/target/" />
-    <ignored path="$PROJECT_DIR$/KazaamIQ/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/KazaamBase/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/KazaamIQ/src/main/java/IQSocket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/KazaamIQ/src/main/java/IQHistory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="37" column="52" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/KazaamIQ/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -106,15 +45,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/KazaamBase/pom.xml" />
-        <option value="$PROJECT_DIR$/KazaamBase/src/main/java/IQSocket.java" />
-        <option value="$PROJECT_DIR$/KazaamIQ/pom.xml" />
-        <option value="$PROJECT_DIR$/KazaamIQ/src/main/java/IQHistory.java" />
-      </list>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -137,93 +76,13 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
+  <component name="ProjectId" id="1TMGVwv7bIE3kmX9vI7gMK0R9vQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="KazaamBase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="KazaamBase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="KazaamBase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="KazaamBase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="KazaamIQ" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="KazaamIQ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="KazaamIQ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="KazaamIQ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8.0_211" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -262,65 +121,18 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25746268" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Learn" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-    </layout>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/KazaamBase/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KazaamIQ/src/main/java/IQSocket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KazaamIQ/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KazaamIQ/src/main/java/IQHistory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="37" column="52" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="masterDetails">
     <states>
