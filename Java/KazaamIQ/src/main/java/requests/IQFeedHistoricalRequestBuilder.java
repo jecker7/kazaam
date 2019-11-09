@@ -2,14 +2,14 @@ package requests;
 
 public final class IQFeedHistoricalRequestBuilder {
 
-    // TODO: add in validations
+    // TODO: add in validation for individual data types
     // request strings for IQFeed interface
     // In general: timeframes are specified in the following format: CCYYMMDD HHmmSS
     // see here http://www.iqfeed.net/dev/api/docs/HistoricalviaTCPIP.cfm for more information
     // tick / max pts
     // required
     protected String symbol;
-    protected String requestType;
+    protected String dataType;
     // optional
     protected String beginDate;
     protected String beginDateTime;
@@ -41,8 +41,8 @@ public final class IQFeedHistoricalRequestBuilder {
         return this;
     }
 
-    public IQFeedHistoricalRequestBuilder setRequestType(String requestType) {
-        this.requestType = requestType;
+    public IQFeedHistoricalRequestBuilder setDataType(String dataType) {
+        this.dataType = dataType;
         return this;
     }
 
@@ -132,7 +132,7 @@ public final class IQFeedHistoricalRequestBuilder {
     }
 
     public IQFeedHistoricalRequestBuilder but() {
-        return anIQFeedHistoricalRequest().setSymbol(symbol).setRequestType(requestType).setBeginDate(beginDate).setBeginDateTime(beginDateTime).setBeginFilterTime(beginFilterTime).setDataDirection(dataDirection).setDataPtsPerSend(dataPtsPerSend).setEndDate(endDate).setEndDateTime(endDateTime).setEndFilterTime(endFilterTime).setIncludePartialData(includePartialData).setInterval(interval).setIntervalType(intervalType).setLabelAtBeginning(labelAtBeginning).setMaxDataPts(maxDataPts).setMaxDays(maxDays).setMaxMonths(maxMonths).setMaxWeeks(maxWeeks).setRequestID(requestID);
+        return anIQFeedHistoricalRequest().setSymbol(symbol).setDataType(dataType).setBeginDate(beginDate).setBeginDateTime(beginDateTime).setBeginFilterTime(beginFilterTime).setDataDirection(dataDirection).setDataPtsPerSend(dataPtsPerSend).setEndDate(endDate).setEndDateTime(endDateTime).setEndFilterTime(endFilterTime).setIncludePartialData(includePartialData).setInterval(interval).setIntervalType(intervalType).setLabelAtBeginning(labelAtBeginning).setMaxDataPts(maxDataPts).setMaxDays(maxDays).setMaxMonths(maxMonths).setMaxWeeks(maxWeeks).setRequestID(requestID);
     }
 
     public IQFeedHistoricalRequest build() {

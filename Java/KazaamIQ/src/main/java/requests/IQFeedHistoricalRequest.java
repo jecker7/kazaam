@@ -2,7 +2,7 @@ package requests;
 
 public class IQFeedHistoricalRequest {
 
-    // TODO: refactor add validation
+    // TODO: refactor,  add validation
 
     // request strings for IQFeed interface
     // In general: timeframes are specified in the following format: CCYYMMDD HHmmSS
@@ -10,7 +10,7 @@ public class IQFeedHistoricalRequest {
     // tick / max pts
     // required
     private String symbol;
-    private String requestType;
+    private String dataPeriod;
     // optional
     private String beginDate;
     private String beginDateTime;
@@ -32,7 +32,7 @@ public class IQFeedHistoricalRequest {
 
     public IQFeedHistoricalRequest(IQFeedHistoricalRequestBuilder builder) {
         symbol = builder.symbol;
-        requestType = builder.requestType;
+        dataPeriod = builder.dataType;
         beginDate = builder.beginDate;
         beginDateTime = builder.beginDateTime;
         beginFilterTime = builder.beginFilterTime;
@@ -50,6 +50,30 @@ public class IQFeedHistoricalRequest {
         maxMonths = builder.maxMonths;
         maxWeeks = builder.maxWeeks;
         requestID = builder.requestID;
+       // validating the requests here
+    }
+
+    public String get(){
+        StringBuilder requestString = new StringBuilder();
+        String requestPrefix;
+        String dataPeriodQualifier;
+        String timeQualifier;
+        switch (dataPeriod.toLowerCase()) {
+            // TODO: finish up here
+            // TODO: convert strings to enums
+            case ("tick"):
+                dataPeriodQualifier = "T";
+            case ("day"):
+                dataPeriodQualifier = "D";
+            case ("interval"):
+                dataPeriodQualifier = "I";
+            case ("week"):
+                dataPeriodQualifier = "W";
+            case ("month"):
+                dataPeriodQualifier = "M";
+        }
+        // check
+        return requestString.toString();
     }
 }
 
