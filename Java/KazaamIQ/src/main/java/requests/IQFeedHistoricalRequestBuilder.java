@@ -8,26 +8,26 @@ public final class IQFeedHistoricalRequestBuilder {
     // see here http://www.iqfeed.net/dev/api/docs/HistoricalviaTCPIP.cfm for more information
     // tick / max pts
     // required
-    protected String symbol;
-    protected String dataType;
+    protected String symbol = "";
+    protected String dataType= "";
     // optional
-    protected String beginDate;
-    protected String beginDateTime;
-    protected String beginFilterTime;
-    protected String dataDirection;
-    protected String dataPtsPerSend;
-    protected String endDate;
-    protected String endDateTime;
-    protected String endFilterTime;
-    protected String includePartialData;
-    protected String interval;
-    protected String intervalType;
-    protected String labelAtBeginning;
-    protected String maxDataPts;
-    protected String maxDays;
-    protected String maxMonths;
-    protected String maxWeeks;
-    protected String requestID;
+    protected String beginDate= "";
+    protected String beginDateTime= "";
+    protected String beginFilterTime= "";
+    protected String dataDirection= "";
+    protected String dataPtsPerSend= "";
+    protected String endDate= "";
+    protected String endDateTime= "";
+    protected String endFilterTime= "";
+    protected String includePartialData= "";
+    protected String interval= "";
+    protected String intervalType= "";
+    protected String labelAtBeginning= "";
+    protected String maxDataPts= "";
+    protected String maxDays= "";
+    protected String maxMonths= "";
+    protected String maxWeeks= "";
+    protected String requestID= "";
 
     private IQFeedHistoricalRequestBuilder() {
     }

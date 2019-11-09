@@ -1,4 +1,8 @@
 package requests;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Objects;
 
 public class IQFeedHistoricalRequest {
 
@@ -53,94 +57,48 @@ public class IQFeedHistoricalRequest {
        // validating the requests here
     }
 
-    public String get(){
-        StringBuilder requestString = new StringBuilder();
-        String requestPrefix;
-        String dataPeriodQualifier;
+    public String toString(){
+        // TODO: fix this mess and test it's ass ...
+        String dataQualifier;
         String timeQualifier;
+
         switch (dataPeriod.toLowerCase()) {
             // TODO: finish up here
             // TODO: convert strings to enums
             case ("tick"):
-                dataPeriodQualifier = "T";
+                dataQualifier = "T";
             case ("day"):
-                dataPeriodQualifier = "D";
+                dataQualifier = "D";
             case ("interval"):
-                dataPeriodQualifier = "I";
+                dataQualifier = "I";
             case ("week"):
-                dataPeriodQualifier = "W";
+                dataQualifier = "W";
             case ("month"):
-                dataPeriodQualifier = "M";
+                dataQualifier = "M";
         }
-        // check
-        return requestString.toString();
-    }
-}
 
-//    public String HTX(String symbol, String maxPts){
-//        return String.format("HTX,%s,%s\r\n", symbol, maxPts);
-//    }
-//
-//    // tick / max days
-//    public String HTD(String symbol, String maxDays){ return String.format("HTD,%s,%s\r\n", symbol, maxDays); }
-//
-//    // TODO: look up specifics for timeframe formatting
-//
-//    // tick / timeframe
-//    // time format - CCYYMMDD HHmmSS
-//    public String HTT(String symbol, String begin, String end){ return String.format("HTT,%s,%s,%s\r\n", symbol, begin, end); }
-//
-//    // interval by seconds / max pts.
-//    public String HIX(String symbol, String interval, String maxData){ return String.format("HIX,%s,%s,%s\r\n", symbol, interval, maxData); }
-//
-//    // interval by seconds / max days
-//    public String HID(String symbol, String interval, String maxDays){ return String.format("HID,%s,%s,%s\r\n", symbol, interval, maxDays); }
-//
-//    // interval, timeframe (begin, end)
-//    public String HIT(String symbol, String interval, String begin, String end){ return String.format("HID,%s,%s,%s,%s\r\n", symbol, interval, begin,end); }
-//
-//    // daily, max days
-//    public String HDX(String symbol, String maxDays){
-//        return String.format("HID,%s,%s\r\n", symbol, maxDays);
-//    }
-//
-//    public String HDT(String symbol, String begin, String end){ return String.format("HID,%s,%s,%s\r\n", symbol, begin, end); }
-//
-//    public String HWX(String symbol, String maxWeeks){
-//        return String.format("HID,%s,%s\r\n", symbol, maxWeeks);
-//    }
-//
-//    public String HMX(String symbol, String maxMonths){ return String.format("HID,%s,%s\r\n", symbol, maxMonths); }
-//    // tick / max pts.
-//    public String HTX(String symbol, String maxPts){
-//        return String.format("HTX,%s,%s\r\n", symbol, maxPts);
-//    }
-//
-//    // tick / max days
-//    public String HTD(String symbol, String maxDays){ return String.format("HTD,%s,%s\r\n", symbol, maxDays); }
-//
-//    // TODO: look up specifics for timeframe formatting
-//
-//    // tick / timeframe
-//    // time format - CCYYMMDD HHmmSS
-//    public String HTT(String symbol, String begin, String end){ return String.format("HTT,%s,%s,%s\r\n", symbol, begin, end); }
-//
-//    // interval by seconds / max pts.
-//    public String HIX(String symbol, String interval, String maxData){ return String.format("HIX,%s,%s,%s\r\n", symbol, interval, maxData); }
-//
-//    // interval by seconds / max days
-//    public String HID(String symbol, String interval, String maxDays){ return String.format("HID,%s,%s,%s\r\n", symbol, interval, maxDays); }
-//
-//    // interval, timeframe (begin, end)
-//    public String HIT(String symbol, String interval, String begin, String end){ return String.format("HID,%s,%s,%s,%s\r\n", symbol, interval, begin,end); }
-//
-//    // daily, max days
-//    public String HDX(String symbol, String maxDays){
-//        return String.format("HID,%s,%s\r\n", symbol, maxDays);
-//    }
-//
-//    public String HDT(String symbol, String begin, String end){ return String.format("HID,%s,%s,%s\r\n", symbol, begin, end); }
-//    public String HWX(String symbol, String maxWeeks){
-//        return String.format("HID,%s,%s\r\n", symbol, maxWeeks);
-//    }
-//    public String HMX(String symbol, String maxMonths){ return String.format("HID,%s,%s\r\n", symbol, maxMonths); }
+        if(maxDataPts != null){
+            timeQualifier = "X";
+        } else if (maxDays != null){
+            timeQualifier = "D";
+        } else if (beginDateTime != null && endDateTime != null){
+            timeQualifier = "T";
+        }
+
+        String dataRequest = new StringBuilder("H" + dataQualifier + timeQualifier);
+
+        List<String> argsOrder = Arrays.asList(symbol, interval, maxDays, maxWeeks, maxMonths, beginDateTime, beginDate,
+                endDate, maxDataPts, beginFilterTime, endFilterTime, dataDirection, requestID, dataPtsPerSend, includePartialData,
+                intervalType, labelAtBeginning);
+
+        for(String arg: argsOrder){
+            if(!Objects.equals(arg, "", null)){
+                dataRequest.append(arg + ",");
+            }
+            // remove trailing comma
+            dataRequest.delete(len(dataRequest)-1);
+        }
+        return dataRequest;
+    }
+
+}
