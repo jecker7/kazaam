@@ -1,5 +1,7 @@
 package requests;
 
+import java.security.InvalidParameterException;
+
 public final class IQFeedHistoricalRequestBuilder {
 
     // TODO: add in validation for individual data types
@@ -9,7 +11,7 @@ public final class IQFeedHistoricalRequestBuilder {
     // tick / max pts
     // required
     protected String symbol = "";
-    protected String dataType= "";
+    protected String tickSize= "";
     // optional
     protected String beginDate= "";
     protected String beginDateTime= "";
@@ -29,7 +31,7 @@ public final class IQFeedHistoricalRequestBuilder {
     protected String maxWeeks= "";
     protected String requestID= "";
 
-    private IQFeedHistoricalRequestBuilder() {
+    public IQFeedHistoricalRequestBuilder() {
     }
 
     public static IQFeedHistoricalRequestBuilder anIQFeedHistoricalRequest() {
@@ -42,7 +44,7 @@ public final class IQFeedHistoricalRequestBuilder {
     }
 
     public IQFeedHistoricalRequestBuilder setDataType(String dataType) {
-        this.dataType = dataType;
+        this.tickSize = dataType;
         return this;
     }
 
@@ -132,10 +134,24 @@ public final class IQFeedHistoricalRequestBuilder {
     }
 
     public IQFeedHistoricalRequestBuilder but() {
-        return anIQFeedHistoricalRequest().setSymbol(symbol).setDataType(dataType).setBeginDate(beginDate).setBeginDateTime(beginDateTime).setBeginFilterTime(beginFilterTime).setDataDirection(dataDirection).setDataPtsPerSend(dataPtsPerSend).setEndDate(endDate).setEndDateTime(endDateTime).setEndFilterTime(endFilterTime).setIncludePartialData(includePartialData).setInterval(interval).setIntervalType(intervalType).setLabelAtBeginning(labelAtBeginning).setMaxDataPts(maxDataPts).setMaxDays(maxDays).setMaxMonths(maxMonths).setMaxWeeks(maxWeeks).setRequestID(requestID);
+        return anIQFeedHistoricalRequest().setSymbol(symbol).setDataType(tickSize).setBeginDate(beginDate).setBeginDateTime(beginDateTime).setBeginFilterTime(beginFilterTime).setDataDirection(dataDirection).setDataPtsPerSend(dataPtsPerSend).setEndDate(endDate).setEndDateTime(endDateTime).setEndFilterTime(endFilterTime).setIncludePartialData(includePartialData).setInterval(interval).setIntervalType(intervalType).setLabelAtBeginning(labelAtBeginning).setMaxDataPts(maxDataPts).setMaxDays(maxDays).setMaxMonths(maxMonths).setMaxWeeks(maxWeeks).setRequestID(requestID);
     }
 
     public IQFeedHistoricalRequest build() {
         return new IQFeedHistoricalRequest(this);
+    }
+
+    private void validate(IQFeedHistoricalRequest request){
+        try {
+            checkVal(request.symbol);
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void checkVal(String val) throws Exception {
+        if(val == "" || val == null){
+            throw new InvalidParameterException("Null or empty value in builder")
+        }
     }
 }

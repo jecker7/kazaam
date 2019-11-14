@@ -1,4 +1,5 @@
 package requests;
+import java.security.InvalidParameterException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -13,30 +14,31 @@ public class IQFeedHistoricalRequest {
     // see here http://www.iqfeed.net/dev/api/docs/HistoricalviaTCPIP.cfm for more information
     // tick / max pts
     // required
-    private String symbol;
-    private String dataPeriod;
+    public String symbol;
+    public String dataPeriod;
     // optional
-    private String beginDate;
-    private String beginDateTime;
-    private String beginFilterTime;
-    private String dataDirection;
-    private String dataPtsPerSend;
-    private String endDate;
-    private String endDateTime;
-    private String endFilterTime;
-    private String includePartialData;
-    private String interval;
-    private String intervalType;
-    private String labelAtBeginning;
-    private String maxDataPts;
-    private String maxDays;
-    private String maxMonths;
-    private String maxWeeks;
-    private String requestID;
+    public String beginDate;
+    public String beginDateTime;
+    public String beginFilterTime;
+    public String dataDirection;
+    public String dataPtsPerSend;
+    public String endDate;
+    public String endDateTime;
+    public String endFilterTime;
+    public String includePartialData;
+    public String interval;
+    public String intervalType;
+    public String labelAtBeginning;
+    public String maxDataPts;
+    public String maxDays;
+    public String maxMonths;
+    public String maxWeeks;
+    public String requestID;
+
 
     public IQFeedHistoricalRequest(IQFeedHistoricalRequestBuilder builder) {
         symbol = builder.symbol;
-        dataPeriod = builder.dataType;
+        dataPeriod = builder.tickSize;
         beginDate = builder.beginDate;
         beginDateTime = builder.beginDateTime;
         beginFilterTime = builder.beginFilterTime;
@@ -57,10 +59,10 @@ public class IQFeedHistoricalRequest {
        // validating the requests here
     }
 
-    public String toString(){
-        // TODO: fix this mess and test it's ass ...
-        String dataQualifier;
-        String timeQualifier;
+    public String toString() throws InvalidParameterException {
+        // TODO: null checks, update lang level to support Objects.Equals()
+        String dataQualifier = null;
+        String timeQualifier = null;
 
         switch (dataPeriod.toLowerCase()) {
             // TODO: finish up here
@@ -83,22 +85,32 @@ public class IQFeedHistoricalRequest {
             timeQualifier = "D";
         } else if (beginDateTime != null && endDateTime != null){
             timeQualifier = "T";
+        } else {
+            throw new InvalidParameterException("Invalid time Qualifier");
         }
 
-        String dataRequest = new StringBuilder("H" + dataQualifier + timeQualifier);
+        StringBuilder dataRequest = new StringBuilder("H");
 
+        if((dataQualifier != null) && (timeQualifier != null) ) {
+            dataRequest.append(dataQualifier);
+            dataRequest.append(timeQualifier);
+        }
+
+        // arguments for historical requests follow the hierarchy shown below
         List<String> argsOrder = Arrays.asList(symbol, interval, maxDays, maxWeeks, maxMonths, beginDateTime, beginDate,
                 endDate, maxDataPts, beginFilterTime, endFilterTime, dataDirection, requestID, dataPtsPerSend, includePartialData,
                 intervalType, labelAtBeginning);
 
         for(String arg: argsOrder){
-            if(!Objects.equals(arg, "", null)){
+            // TODO: convert to Objects.equals
+            if(arg != "" && arg != null){
                 dataRequest.append(arg + ",");
             }
             // remove trailing comma
-            dataRequest.delete(len(dataRequest)-1);
+            dataRequest.deleteCharAt(dataRequest.length()-1);
         }
-        return dataRequest;
+
+        return dataRequest.toString();
     }
 
 }

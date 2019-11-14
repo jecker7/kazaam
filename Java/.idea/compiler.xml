@@ -12,7 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="KazaamBase" target="1.5" />
-      <module name="KazaamIQ" target="1.5" />
+      <module name="KazaamIQ" target="7" />
     </bytecodeTargetLevel>
   </component>
 </project>
