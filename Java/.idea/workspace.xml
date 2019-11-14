@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eda611c-761e-44c4-9bc0-c3dd829295de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_21.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/KazaamIQ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/KazaamIQ.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/requests/IQFeedHistoricalRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/java/requests/IQFeedHistoricalRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/requests/IQFeedHistoricalRequestBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/java/requests/IQFeedHistoricalRequestBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/test/TestIQFeedHistoricalRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/test/TestIQFeedHistoricalRequest.java" afterDir="false" />
     </list>
@@ -188,6 +187,11 @@
           <url>file://$PROJECT_DIR$/KazaamIQ/src/main/test/TestIQFeedHistoricalRequest.java</url>
           <line>16</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/KazaamIQ/src/main/java/requests/IQFeedHistoricalRequest.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

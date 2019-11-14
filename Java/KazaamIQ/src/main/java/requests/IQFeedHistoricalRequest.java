@@ -107,8 +107,8 @@ public class IQFeedHistoricalRequest {
                 dataRequest.append(arg + ",");
             }
             // remove trailing comma
-            dataRequest.deleteCharAt(dataRequest.length()-1);
         }
+        dataRequest.deleteCharAt(dataRequest.length()-1);
 
         return dataRequest.toString();
     }

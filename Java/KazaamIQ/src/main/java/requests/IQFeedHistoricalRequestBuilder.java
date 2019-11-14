@@ -144,7 +144,7 @@ public final class IQFeedHistoricalRequestBuilder {
 
 
 
-    private void validate(IQFeedHistoricalRequest request) throws Exception{
+    private boolean validate(IQFeedHistoricalRequest request) throws Exception{
         // TODO: refactor to check for invalid parameter values, redundant/extra fields
         /*
           in general, we need the following combinations for a valid request, dependent on ticksize:
@@ -155,7 +155,12 @@ public final class IQFeedHistoricalRequestBuilder {
                 month: maxMonth
          */
         try {
-            checkVal(request.symbol);
+            if(!checkVal(request.symbol)){
+                throw new InvalidParameterException("Invalid parameter for SYMBOL");
+            }
+            if(!checkVal(request.dataPeriod)){
+                throw new InvalidParameterException("Invalid parameter for DATAPERIOD");
+            }
             switch(request.dataPeriod.toLowerCase()){
                 case "tick":
                     if((checkVal(request.maxDataPts) || checkVal(request.maxDays) ||
@@ -180,9 +185,11 @@ public final class IQFeedHistoricalRequestBuilder {
                         throw new InvalidParameterException("Invalid parameters for request of tick size: month");
                     }
             }
+            return true;
         } catch(Exception e) {
             logger.error(e.getMessage());
         }
+        return false;
     }
 
     private boolean checkVal(String val) {
@@ -192,13 +199,16 @@ public final class IQFeedHistoricalRequestBuilder {
         return true;
     }
 
-    public IQFeedHistoricalRequest build() throws Exception {
+    public IQFeedHistoricalRequest build() {
         IQFeedHistoricalRequest request = new IQFeedHistoricalRequest(this);
+        IQFeedHistoricalRequest validatedRequest = null;
         try {
-            validate(request);
+            if(validate(request)){
+                validatedRequest = request;
+            }
         } catch (Exception e) {
             logger.error(e.getMessage());
         }
-        return new IQFeedHistoricalRequest(this);
+        return validatedRequest;
     }
 }

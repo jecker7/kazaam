@@ -13,12 +13,12 @@ public class TestIQFeedHistoricalRequest {
     @Test
     public void testIQFeedHistoricalRequestBuilder(){
         try {
-            IQFeedHistoricalRequest request = new IQFeedHistoricalRequestBuilder()
+            String request = new IQFeedHistoricalRequestBuilder()
                     .setRequestID("ID")
                     .setDataType("I")
                     .setBeginDateTime("time1")
                     .setEndDateTime("time2")
-                    .build();
+                    .build().toString();
             System.out.println(" request: " + request);
         } catch(Exception e){
             logger.error(e.getMessage());
