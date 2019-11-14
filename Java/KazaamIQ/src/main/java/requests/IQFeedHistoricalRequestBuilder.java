@@ -1,5 +1,6 @@
+//@contributor cgouda
+//@author jecker
 package requests;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -161,29 +162,41 @@ public final class IQFeedHistoricalRequestBuilder {
             if(!checkVal(request.dataPeriod)){
                 throw new InvalidParameterException("Invalid parameter for DATAPERIOD");
             }
-            switch(request.dataPeriod.toLowerCase()){
+            String size = request.dataPeriod.toLowerCase();
+            switch(size){
                 case "tick":
-                    if((checkVal(request.maxDataPts) || checkVal(request.maxDays) ||
+                    if(!(checkVal(request.maxDataPts) || checkVal(request.maxDays) ||
                             (checkVal(request.beginDateTime) && checkVal(request.endDateTime)))){
                         throw new InvalidParameterException("Invalid parameters for request of tick size: tick");
                     }
-                case "day":
-                    if((checkVal(request.maxDays) || (checkVal(request.beginDate) && checkVal(request.beginDate)))){
-                        throw new InvalidParameterException("Invalid parameters for request of tick size: day");
-                    }
-                case "interval":
-                    if((checkVal(request.maxDataPts) || checkVal(request.maxDays) ||
+                    break;
+                case "minute":
+                    if(!(checkVal(request.maxDataPts) || checkVal(request.maxDays) ||
                             (checkVal(request.beginFilterTime) && checkVal(request.endFilterTime)))){
                         throw new InvalidParameterException("Invalid parameters for request of tick size: interval");
                     }
+                    break;
+                case "day":
+                    if(!(checkVal(request.maxDays) || (checkVal(request.beginDate) && checkVal(request.beginDate)))){
+                        throw new InvalidParameterException("Invalid parameters for request of tick size: day");
+                    }
+                    break;
+                case "interval":
+                    if( !checkVal(request.interval) || !(checkVal(request.maxDataPts) || checkVal(request.maxDays) ||
+                            (checkVal(request.beginFilterTime) && checkVal(request.endFilterTime)))){
+                        throw new InvalidParameterException("Invalid parameters for request of tick size: interval");
+                    }
+                    break;
                 case "week":
                     if(!checkVal(request.maxWeeks)){
                         throw new InvalidParameterException("Invalid parameters for request of tick size: week");
                     }
+                    break;
                 case "month":
-                    if(checkVal(request.maxMonths)) {
+                    if(!checkVal(request.maxMonths)) {
                         throw new InvalidParameterException("Invalid parameters for request of tick size: month");
                     }
+                    break;
             }
             return true;
         } catch(Exception e) {

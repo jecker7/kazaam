@@ -14,10 +14,12 @@ public class TestIQFeedHistoricalRequest {
     public void testIQFeedHistoricalRequestBuilder(){
         try {
             String request = new IQFeedHistoricalRequestBuilder()
-                    .setRequestID("ID")
-                    .setDataType("I")
-                    .setBeginDateTime("time1")
-                    .setEndDateTime("time2")
+                    .setSymbol("GOOG")
+                    .setDataType("minute")
+                    //TODO: add validation for ints and strings
+                    .setMaxDataPts("1000")
+                    .setDataDirection("0")
+                    .setRequestID("ID1")
                     .build().toString();
             System.out.println(" request: " + request);
         } catch(Exception e){

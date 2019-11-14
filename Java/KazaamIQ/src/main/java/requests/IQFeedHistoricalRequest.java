@@ -69,14 +69,43 @@ public class IQFeedHistoricalRequest {
             // TODO: convert strings to enums
             case ("tick"):
                 dataQualifier = "T";
+                break;
+            case ("minute"):
+                dataQualifier = "I";
+                this.interval = "60";
+                break;
+            case ("min"):
+                dataQualifier = "I";
+                this.interval = "60";
+                break;
+            case ("m"):
+                dataQualifier = "I";
+                this.interval = "60";
+                break;
+            case ("d"):
+                dataQualifier = "D";
+                break;
             case ("day"):
                 dataQualifier = "D";
+                break;
             case ("interval"):
                 dataQualifier = "I";
+                break;
+            case ("w"):
+                dataQualifier = "W";
+                break;
+            case ("wk"):
+                dataQualifier = "W";
+                break;
             case ("week"):
                 dataQualifier = "W";
+                break;
+            case ("mo"):
+                dataQualifier = "M";
+                break;
             case ("month"):
                 dataQualifier = "M";
+                break;
         }
 
         if(maxDataPts != null){
@@ -94,6 +123,7 @@ public class IQFeedHistoricalRequest {
         if((dataQualifier != null) && (timeQualifier != null) ) {
             dataRequest.append(dataQualifier);
             dataRequest.append(timeQualifier);
+            dataRequest.append(",");
         }
 
         // arguments for historical requests follow the hierarchy shown below

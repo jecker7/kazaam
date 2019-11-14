@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eda611c-761e-44c4-9bc0-c3dd829295de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_21.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/requests/IQFeedHistoricalRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/java/requests/IQFeedHistoricalRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/requests/IQFeedHistoricalRequestBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/java/requests/IQFeedHistoricalRequestBuilder.java" afterDir="false" />
@@ -184,14 +183,19 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/KazaamIQ/src/main/test/TestIQFeedHistoricalRequest.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="5" />
+          <url>file://$PROJECT_DIR$/KazaamIQ/src/main/java/requests/IQFeedHistoricalRequest.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/KazaamIQ/src/main/java/requests/IQFeedHistoricalRequest.java</url>
-          <line>99</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/KazaamIQ/src/main/java/requests/IQFeedHistoricalRequestBuilder.java</url>
+          <line>165</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/KazaamIQ/src/main/test/TestIQFeedHistoricalRequest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
