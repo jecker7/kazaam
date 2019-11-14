@@ -1,7 +1,7 @@
 package requests;
 
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.security.InvalidParameterException;
 
@@ -142,10 +142,7 @@ public final class IQFeedHistoricalRequestBuilder {
         return anIQFeedHistoricalRequest().setSymbol(symbol).setDataType(tickSize).setBeginDate(beginDate).setBeginDateTime(beginDateTime).setBeginFilterTime(beginFilterTime).setDataDirection(dataDirection).setDataPtsPerSend(dataPtsPerSend).setEndDate(endDate).setEndDateTime(endDateTime).setEndFilterTime(endFilterTime).setIncludePartialData(includePartialData).setInterval(interval).setIntervalType(intervalType).setLabelAtBeginning(labelAtBeginning).setMaxDataPts(maxDataPts).setMaxDays(maxDays).setMaxMonths(maxMonths).setMaxWeeks(maxWeeks).setRequestID(requestID);
     }
 
-    public IQFeedHistoricalRequest build() {
-        IQFeedHistoricalRequest request = new IQFeedHistoricalRequest(this);
-        return new IQFeedHistoricalRequest(this);
-    }
+
 
     private void validate(IQFeedHistoricalRequest request) throws Exception{
         // TODO: refactor to check for invalid parameter values, redundant/extra fields
@@ -188,10 +185,20 @@ public final class IQFeedHistoricalRequestBuilder {
         }
     }
 
-    private boolean checkVal(String val) throws Exception {
+    private boolean checkVal(String val) {
         if(val == "" || val == null){
             return false;
         }
         return true;
+    }
+
+    public IQFeedHistoricalRequest build() throws Exception {
+        IQFeedHistoricalRequest request = new IQFeedHistoricalRequest(this);
+        try {
+            validate(request);
+        } catch (Exception e) {
+            logger.error(e.getMessage());
+        }
+        return new IQFeedHistoricalRequest(this);
     }
 }

@@ -1,8 +1,10 @@
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.junit.*;
 import requests.IQFeedHistoricalRequest;
 import requests.IQFeedHistoricalRequestBuilder;
+
+import java.util.Objects;
 
 public class TestIQFeedHistoricalRequest {
 
@@ -10,12 +12,16 @@ public class TestIQFeedHistoricalRequest {
 
     @Test
     public void testIQFeedHistoricalRequestBuilder(){
-        IQFeedHistoricalRequest request = new IQFeedHistoricalRequestBuilder()
-                .setRequestID("ID")
-                .setDataType("I")
-                .setBeginDateTime("time1")
-                .setEndDateTime("time2")
-                .build();
-        System.out.println(request);
+        try {
+            IQFeedHistoricalRequest request = new IQFeedHistoricalRequestBuilder()
+                    .setRequestID("ID")
+                    .setDataType("I")
+                    .setBeginDateTime("time1")
+                    .setEndDateTime("time2")
+                    .build();
+            System.out.println(" request: " + request);
+        } catch(Exception e){
+            logger.error(e.getMessage());
+        }
     }
 }
