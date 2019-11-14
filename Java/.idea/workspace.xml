@@ -2,50 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eda611c-761e-44c4-9bc0-c3dd829295de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_rc_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KazaamIQ/src/main/test/TestIQFeedHistoricalRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/CME.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/MasterList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/KazaamIQ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/KazaamIQ.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/requests/IQFeedHistoricalRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/java/requests/IQFeedHistoricalRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/requests/IQFeedHistoricalRequestBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/java/requests/IQFeedHistoricalRequestBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/ASx24.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/get_iqfeed_symbols.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/BMF.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/ASx24.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/CBOT-Globex.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/BMF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/CBOT-Mini.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/CBOT-Globex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/CBOT.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/CBOT-Mini.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/CFE.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/CBOT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/CME-Europe.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/CFE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/CME-Mini.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/CME-Europe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/CME.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/CNE-Globex.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/CME-Mini.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/COMEX-Globex.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/CNE-Globex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/COMEX.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/COMEX-Globex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/DCE.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/COMEX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/EEX.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/DCE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/EUREX.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/EEX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/Euronext-Commodity-Derivatives.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/EUREX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/Euronext-Equity-Index-Derivatives.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/Euronext-Commodity-Derivatives.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/ICEEA.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/Euronext-Equity-Index-Derivatives.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/ICEEC.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/ICEEA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/ICEEF.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/ICEEC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/ICEENDEX.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/ICEEF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/ICEFC.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/ICEENDEX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/ICEFU.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/ICEFC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/Johannesburg-Derivatives.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/ICEFU.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/KCBOT.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/Johannesburg-Derivatives.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/LME.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/KCBOT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/MCX.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/LME.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Futures/MDEX.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/MCX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/MasterList.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Futures/MDEX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/java/symbols/Symbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/utils/symbols/Symbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KazaamIQ/src/main/test/TestIQFeedHistoricalRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/KazaamIQ/src/main/test/TestIQFeedHistoricalRequest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -224,7 +183,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/KazaamIQ/src/main/test/TestIQFeedHistoricalRequest.java</url>
-          <line>9</line>
+          <line>13</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>

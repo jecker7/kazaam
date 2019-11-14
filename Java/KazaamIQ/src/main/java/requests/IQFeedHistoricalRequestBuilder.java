@@ -1,8 +1,13 @@
 package requests;
 
+import com.sun.org.slf4j.internal.Logger;
+import com.sun.org.slf4j.internal.LoggerFactory;
+
 import java.security.InvalidParameterException;
 
 public final class IQFeedHistoricalRequestBuilder {
+
+    Logger logger = LoggerFactory.getLogger(this.getClass());
 
     // TODO: add in validation for individual data types
     // request strings for IQFeed interface
@@ -138,20 +143,55 @@ public final class IQFeedHistoricalRequestBuilder {
     }
 
     public IQFeedHistoricalRequest build() {
+        IQFeedHistoricalRequest request = new IQFeedHistoricalRequest(this);
         return new IQFeedHistoricalRequest(this);
     }
 
-    private void validate(IQFeedHistoricalRequest request){
+    private void validate(IQFeedHistoricalRequest request) throws Exception{
+        // TODO: refactor to check for invalid parameter values, redundant/extra fields
+        /*
+          in general, we need the following combinations for a valid request, dependent on ticksize:
+                tick: maxDataPoints || maxDays || (BeginDateTime, EndDateTime)
+                interval: maxDataPoints || maxDays || (BeginFilterTime, EndFilterTime)
+                day: maxDays || (beginDate, endDate)
+                week: maxWeeks
+                month: maxMonth
+         */
         try {
             checkVal(request.symbol);
+            switch(request.dataPeriod.toLowerCase()){
+                case "tick":
+                    if((checkVal(request.maxDataPts) || checkVal(request.maxDays) ||
+                            (checkVal(request.beginDateTime) && checkVal(request.endDateTime)))){
+                        throw new InvalidParameterException("Invalid parameters for request of tick size: tick");
+                    }
+                case "day":
+                    if((checkVal(request.maxDays) || (checkVal(request.beginDate) && checkVal(request.beginDate)))){
+                        throw new InvalidParameterException("Invalid parameters for request of tick size: day");
+                    }
+                case "interval":
+                    if((checkVal(request.maxDataPts) || checkVal(request.maxDays) ||
+                            (checkVal(request.beginFilterTime) && checkVal(request.endFilterTime)))){
+                        throw new InvalidParameterException("Invalid parameters for request of tick size: interval");
+                    }
+                case "week":
+                    if(!checkVal(request.maxWeeks)){
+                        throw new InvalidParameterException("Invalid parameters for request of tick size: week");
+                    }
+                case "month":
+                    if(checkVal(request.maxMonths)) {
+                        throw new InvalidParameterException("Invalid parameters for request of tick size: month");
+                    }
+            }
         } catch(Exception e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
     }
 
-    private void checkVal(String val) throws Exception {
+    private boolean checkVal(String val) throws Exception {
         if(val == "" || val == null){
-            throw new InvalidParameterException("Null or empty value in builder")
+            return false;
         }
+        return true;
     }
 }

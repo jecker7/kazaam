@@ -1,8 +1,12 @@
+import com.sun.org.slf4j.internal.Logger;
+import com.sun.org.slf4j.internal.LoggerFactory;
 import org.junit.*;
 import requests.IQFeedHistoricalRequest;
 import requests.IQFeedHistoricalRequestBuilder;
 
 public class TestIQFeedHistoricalRequest {
+
+    Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Test
     public void testIQFeedHistoricalRequestBuilder(){
