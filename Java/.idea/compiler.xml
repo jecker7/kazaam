@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="KazaamIQ" />
+        <module name="KazaamIB" />
         <module name="KazaamBase" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="KazaamBase" target="1.5" />
+      <module name="KazaamIB" target="1.5" />
       <module name="KazaamIQ" target="7" />
     </bytecodeTargetLevel>
   </component>
